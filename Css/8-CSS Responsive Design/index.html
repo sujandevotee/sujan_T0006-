@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Design</title>
+</head>
+<style>
+    .demo{
+        width: 200px;
+        height: 200px;
+        background-color: #42EADDFF;
+
+    }
+    @media(max-width:1200px){
+        .demo{
+            background-color: rgb(255, 136, 0);
+            box-shadow: 10px 10px 15px rgb(96, 131, 128);
+        }
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 80vh;
+        background-color: rgb(255, 252, 252);
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+        border: 1px rgb(0, 0, 0) solid;
+        display: flex;
+        box-shadow: rgb(255, 140, 0)0px 20px 30px -30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem;
+        transition: 0.5s;
+    }
+</style>
+<body>
+    <h1 style="color: rgb(255, 143, 5);">Grid Layout(Introduction)</h1>
+    <h2>Media Queries:-</h2>
+    <div class="demo"></div>
+<hr>
+
+<div>
+    <main class="container">
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="../image/1.jpg" alt="">
+        </div>
+    </main>
+</div>
+</body>
+</html>

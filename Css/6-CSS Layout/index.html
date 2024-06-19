@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: red;
+    }
+
+    p.none {
+        display: none;
+    }
+
+    p.block {
+        display: block;
+    }
+
+    p.inline {
+        display: inline;
+    }
+
+    p.inline-block {
+        display: inline-block;
+    }
+
+    div.static {
+        position: static;
+        border: 1px red solid;
+    }
+
+    div.relative {
+        position: relative;
+        border: 2px green solid;
+        /* left: 10px; */
+        width: 400px;
+        height: 200px;
+    }
+
+    div.absolute {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 100px;
+        height: 100px;
+        border: 2px red solid;
+    }
+
+    div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: grey;
+        color: aliceblue;
+        top: 0;
+        border: 2px red solid;
+    }
+
+    div.fixed {
+        position: fixed;
+        width: 200px;
+        border: 2px red solid;
+    }
+
+    img {
+        float: left;
+    }
+    div.clear{
+        overflow: auto;
+    }
+    .flex{
+        border: 3px black solid;
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        background-color: rgb(171, 227, 227);
+        padding: 5px;
+        gap: 5px 5px;
+
+    }
+    .grid-item{
+        text-align: center;
+        border: 3px rgba(0,0,0,0.5) solid;
+        font-size: 20px;
+        padding: 20px;
+        background-color: rgb(93, 93, 230);
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <h1 style="color: rgb(255, 143, 5);">CSS Position</h1>
+    <hr>
+
+    <h2>1.Position: Sticky</h2>
+    <div class="sticky">Lorem ipsum dolor sit.</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo cum facere non. Eveniet eaque dolores
+        unde exercitationem recusandae. Est voluptatum illo minima expedita adipisci officia eos perferendis, facere
+        corporis commodi, voluptate repellendus facilis, quisquam nemo sunt voluptas rerum reprehenderit fugiat
+        inventore quo quibusdam recusandae saepe quod a? Harum aut deserunt corrupti eaque reprehenderit perspiciatis
+        voluptas deleniti tempora cumque ratione ab. Provident obcaecati hic sit minima similique voluptatum.</p>
+    <hr>
+
+    <h2>2.Position: static</h2>
+    <div class="static">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolorum.</div>
+    <hr>
+
+    <h2>3.Position: relative & absolute</h2>
+    <div class="relative">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, quam?
+        <div class="absolute">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <hr>
+
+    <h2>4.Position: fixed</h2>
+    <div class="static">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolorum.</div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">CSS Property</h1>
+    <hr>
+
+    <h2>1.display: none;</h2>
+    <div>Lorem ipsum, dolor sit amet <p class="none">consectetur adipisicing</p> elit. Asperiores, natus.</div>
+    <hr>
+
+    <h2>2.display: block;</h2>
+    <div>Lorem ipsum, dolor sit amet <p class="block">consectetur adipisicing</p> elit. Asperiores, natus.</div>
+    <hr>
+
+    <h2>3.display: inline;</h2>
+    <div>Lorem ipsum, dolor sit amet <p class="inline">consectetur adipisicing</p> elit. Asperiores, natus.</div>
+    <hr>
+
+    <h2>4.display: inline-block;</h2>
+    <div>Lorem ipsum, dolor sit amet <p class="inline-block">consectetur adipisicing</p> elit. Asperiores, natus.</div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">Float and Clear</h1>
+    <hr>
+    <h2>Float :- left,right,none,inherit</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nulla reiciendis cum facilis, eos quasi neque
+        autem laboriosam vel, molestias soluta dolores vero! Perferendis, consequatur! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Deleniti fuga nisi tempore consequuntur officia ipsum atque maiores quia, sint
+        vitae? Vero recusandae debitis officia maxime!
+    </p>
+    <div class="clear" style="border: 2px red solid;"><img src="../image/1.jpg" alt="Movie">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium neque blanditiis iste
+            temporibus molestias ullam odio, nihil deserunt magnam, nam nemo doloremque, ipsam aspernatur.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Expedita, nulla reiciendis cum facilis, eos quasi neque autem
+            laboriosam vel, molestias soluta dolores vero! Perferendis, consequatur! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Deleniti fuga nisi tempore consequuntur officia ipsum atque maiores quia, sint
+            vitae? Vero recusandae debitis officia maxime!
+    </div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">CSS Flexbox</h1>
+    <hr>
+
+    <h2>display: flex</h2>
+    <div class="flex">
+        <div style="background-color: red; color: white;">Lorem ipsum dolor sit amet.</div>
+        <div style="background-color: green; color: white;">Lorem ipsum dolor sit amet.</div>
+        <div style="background-color: blue; color: white;">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">Grid Layout(Introduction)</h1>
+    <hr>
+        <h2>Grid Layout:-</h2>
+        <p>--The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+        <div class="grid">
+            <div style="order: 3;" class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+</body>
+</html>

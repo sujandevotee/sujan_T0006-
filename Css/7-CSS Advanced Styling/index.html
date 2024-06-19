@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Styling</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;background-color: aquamarine;
+        transition-property: width;
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+    }
+    div:hover{
+        width: 200px;
+    }
+    .rotate{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transform:rotate(45deg) ;
+    }
+    .skew{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transform: scaley(1.5);
+    }
+    .skew{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transform: skewx(120deg);
+    }
+    .translate{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transform: translate(10px, 10px);
+    }
+    .keyframe{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        box-shadow: 5px 10px 15px #f9530b;
+        animation-name: keyframe;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+    }
+    @keyframes keyframe{
+        form{background-color:orange;}
+        to{background-color: red;}
+    }
+</style>
+<body>
+    <h1 style="color: rgb(255, 143, 5);">Transitions:-</h1>
+    <div></div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">Transforms:-</h1>
+
+    <h2>1.rotate</h2>
+    <div class="rotate">Lorem ipsum dolor sit amet.</div>
+    <h2>2.Scale</h2>
+    <div class="scale">Lorem ipsum dolor sit amet.</div>
+    <h2>3.Skew</h2>
+    <div class="skew">Lorem ipsum dolor sit amet.</div>
+    <h2>4.translate</h2>
+    <div class="translate">Lorem ipsum dolor sit amet.</div>
+    <hr>
+
+    <h1 style="color: rgb(255, 143, 5);">Animations:-</h1>
+    <div class="keyframe"></div>
+    <hr>
+</body>
+</html>
