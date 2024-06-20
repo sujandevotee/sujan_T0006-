@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Table</title>
+  </head>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.42em;
+      color:#A7A1AE;
+      /* background-color:#1F2739; */
+    }
+    h1 {
+      font-size:3em;
+      font-weight: 300;
+      line-height:1em;
+      text-align: center;
+      color: #4DC3FA;
+    }
+    h2 {
+      font-size:1em;
+      font-weight: 300;
+      text-align: center;
+      display: block;
+      line-height:1em;
+      padding-bottom: 2em;
+      color: #FB667A;
+    }
+    h2 a {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #FB667A;
+      text-decoration: none;
+    }
+    .blue { color: #185875; }
+    .yellow { color: #FFF842; }
+    .container th h1 {
+        font-weight: bold;
+        font-size: 1em;
+      text-align: left;
+      color: white;
+    }
+    .container td {
+        font-weight: normal;
+        font-size: 1em;
+        color: white;
+    }
+    .container {
+        text-align: left;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+      display: table;
+      padding: 0 0 8em 0;
+    }
+    .container td, .container th {
+        padding-bottom: 2%;
+        padding-top: 2%;
+      padding-left:2%;
+    }
+    .container tr{
+        background-color: #6c5878;
+    }
+    .head{
+        background-color: #355C7D;
+        
+    }
+    .container td:first-child { color: white; }
+
+    .container tr:hover {
+    background-color: #464A52;
+    }
+
+    .container td:hover {
+      background-color: #c06c84;
+      color: white;
+      font-weight: bold;
+      box-shadow: #dfb3b7 -1px 1px, #dfb3b7 -2px 2px, #dfb3b7 -3px 3px, #dfb3b7 -4px 4px, #dfb3b7 -5px 5px, #dfb3b7 -6px 6px;
+      transform: translate3d(6px, -6px, 0);
+      transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+      transition-timing-function: line;
+    }
+  </style>
+  <body>
+    <table class="container">
+  <thead>
+    <tr>
+      <th class="head"><h1>Name</h1></th>
+      <th class="head"><h1>Age</h1></th>
+      <th class="head"><h1>Email</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sujan</td>
+      <td>20</td>
+      <td>sujan.devotee@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Jaysukh</td>
+        <td>21</td>
+        <td>jaysukh.devotee@gmail.com</td>
+    </tr>
+    <tr>
+        <td>kishan</td>
+        <td>20</td>
+        <td>kishan.devotee@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Prshant</td>
+        <td>21</td>
+        <td>prshant.devotee@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Jenil</td>
+        <td>22</td>
+        <td>jenil.devotee@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Nirav</td>
+        <td>24</td>
+        <td>nirav.devotee@gmail.com</td>
+    </tr>
+  </tbody>
+</table>
+  </body>
+</html>
