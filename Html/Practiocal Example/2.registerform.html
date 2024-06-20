@@ -5,6 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../360_F_680358031_rZ3bhwlPeEe081utZAkERT1Q7iUgqiml.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        padding: 10px;
+    }
+    .container{
+        min-width: 700px;
+        width: 600px;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+    }
+    .container .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .container .title::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(130deg,#4B086D,#ACC0FE );
+    }
+    .container form .user{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    form .user .input-box{
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 15px;
+    }
+    .user .input-box .details{
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .user .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #4B086D;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    form .gender-details .gender-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    form .gender-details .category{
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        /* justify-content: space-between; */
+    }
+    .gender-details .category label{
+        display: flex;
+        align-items: center;
+    }
+    .gender-details .category .dot{
+        height: 18px;
+        width: 18px;
+        background: #d9d9d9;
+        border-radius: 50%;
+         margin-right: 10px;
+         border: 5px solid transparent;
+         transition: all 0.3s ease;
+    }
+    #dot-1:checked ~ .category label .one,
+    #dot-2:checked ~ .category label .two,
+    #dot-3:checked ~ .category label .three{
+        border-color: #d9d9d9;
+        background-color: #4B086D;
+    }
+    form input[type="radio"]{
+        display: none;
+    }
+    form .button{
+        height: 45px;
+        margin: 45px 0;
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        background: linear-gradient(130deg,#4B086D,#ACC0FE );
+        transition: 0.5s ease;
+    }
+    form .button input:hover{
+        background: linear-gradient(-130deg,#c7add3,#6274aa );
+    }
+    @media(max-width:584px){
+        .container{
+            max-width: 100%;
+        }
+        form .user .input-box{
+        width: 100%;
+        margin-bottom: 15px;
+        }
+        form .gender-details .category{
+            width: 100%;
+        }
+        .container form .user{
+            max-height: 300px;
+        }
+    }
+</style>
 <body>
     <div class="container">
         <div class="title">Form</div>
@@ -36,18 +168,22 @@
                 </div>
             </div>
             <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+
                 <span class="gender-title">Gender</span>
                 <div class="category">
-                    <label for="">
+                    <label for="dot-1" style="padding-right: 20px;">
                         <span class="dot one"></span>
                         <span class="gender">Male</span>
                     </label>
-                    <label for="">
-                        <span class="dot one"></span>
-                        <span class="gender">FeMale</span>
+                    <label for="dot-2" style="padding-right: 20px;">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
                     </label>
-                    <label for="">
-                        <span class="dot one"></span>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
                         <span class="gender">Other</span>
                     </label>
                 </div>
