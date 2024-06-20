@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container{
+        width: 85%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card{
+        flex: 300px;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .card:hover{
+        background-color: #ffcc80;
+    }
+    .card a{
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .card1{
+        background-color: #2A9D8F;
+    }
+    .card2{
+        background-color: #F4A261;
+    }
+    .card3{
+        background-color: #E9C46A;
+    }
+    .card h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #000;
+    }
+    .card p{
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card card1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores laboriosam facilis aut voluptatem laudantium itaque necessitatibus tempora deleniti aliquid dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas unde nam doloribus aliquid consequuntur quos eligendi at libero omnis?</p>
+            <a href="#">Read More  &#10140</a>
+        </div>
+        <div class="card card2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores laboriosam facilis aut voluptatem laudantium itaque necessitatibus tempora deleniti aliquid dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit a temporibus? Labore, accusantium? Dolore neque dicta iste amet quod.</p>
+            <a href="#">Read More  &#10140</a>
+        </div>
+        <div class="card card3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores laboriosam facilis aut voluptatem laudantium itaque necessitatibus tempora deleniti aliquid dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo consequatur sequi illo tenetur modi a nihil molestias pariatur eum.</p>
+            <a href="#">Read More  &#10140</a>
+        </div>
+    </div>
+</body>
+</html>
